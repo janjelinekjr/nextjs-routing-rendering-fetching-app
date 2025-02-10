@@ -3,7 +3,7 @@ import Link from "next/link";
 const NewsList = ({news}) => {
     return (
         <ul className='news-list'>
-            {news.map((newsItem) => {
+            {news?.map((newsItem) => {
                 return (
                     <li key={newsItem.id}>
                         <Link href={`/news/${newsItem.slug}`}>
